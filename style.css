@@ -142,9 +142,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   flex-shrink: 0;
 }
 .brand__logo {
-  width: 42px;
-  height: 42px;
+  width: 64px;
+  height: 64px;
   flex-shrink: 0;
+}
+@media (max-width: 480px) {
+  .brand__logo { width: 52px; height: 52px; }
 }
 .rodape__logo {
   width: 46px;
