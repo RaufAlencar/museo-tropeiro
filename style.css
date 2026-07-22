@@ -533,4 +533,8 @@ figure.foto-credito figcaption {
   font-style: italic;
   font-size: 1.3rem;
   color: var(--cor-cafe);
-  b
+  border-left: 4px solid var(--cor-dourado);
+  padding-left: var(--espaco-md);
+  max-width: 640px;
+  margin: var(--espaco-lg) auto;
+}
