@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-label="Emblema do Museu do Tropeiro">
+  <defs>
+    <clipPath id="mt-circulo">
+      <circle cx="110" cy="110" r="90"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="110" cy="110" r="98" fill="#4A3525"/>
+
+  <g clip-path="url(#mt-circulo)">
+    <circle cx="110" cy="110" r="90" fill="#4A3525"/>
+    <circle cx="110" cy="90" r="70" fill="#5A6B4A" opacity="0.18"/>
+
+    <polygon points="0,150 45,105 75,132 108,90 140,136 178,108 220,148 220,220 0,220" fill="#8B6B4A"/>
+    <polygon points="0,168 55,128 90,154 128,118 165,158 220,138 220,220 0,220" fill="#C46A4D"/>
+
+    <rect x="0" y="172" width="220" height="48" fill="#2B241D" opacity="0.6"/>
+
+    <g fill="#F5F0E6">
+      <ellipse cx="110" cy="140" rx="30" ry="14"/>
+      <path d="M82 133 Q69 120 65 104 Q63 97 70 97 Q75 97 77 104 Q81 118 94 129 Z"/>
+      <path d="M68 100 Q64 88 71 86 Q74 93 72 102 Z"/>
+      <path d="M76 97 Q74 84 81 84 Q83 91 79 99 Z"/>
+      <rect x="90" y="150" width="6" height="22" rx="2"/>
+      <rect x="104" y="152" width="6" height="22" rx="2"/>
+      <rect x="118" y="152" width="6" height="22" rx="2"/>
+      <rect x="130" y="150" width="6" height="22" rx="2"/>
+      <path d="M139 132 Q151 138 149 152 Q145 147 140 144 Z"/>
+      <rect x="98" y="122" width="26" height="14" rx="3" fill="#C46A4D"/>
+      <rect x="98" y="122" width="26" height="3.5" rx="1.5" fill="#D4A84B"/>
+    </g>
+  </g>
+
+  <path d="M80 58 A32 32 0 0 1 140 58" fill="none" stroke="#D4A84B" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="81.5" cy="55.5" r="3" fill="#D4A84B"/>
+  <circle cx="138.5" cy="55.5" r="3" fill="#D4A84B"/>
+
+  <circle cx="110" cy="110" r="98" fill="none" stroke="#D4A84B" stroke-width="3.5"/>
+  <circle cx="110" cy="110" r="88" fill="none" stroke="#D4A84B" stroke-width="1" opacity="0.55"/>
+  <circle cx="110" cy="110" r="104" fill="none" stroke="#F5F0E6" stroke-width="0.75" stroke-dasharray="1 5" opacity="0.5"/>
+</svg>
