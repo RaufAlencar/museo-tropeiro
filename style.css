@@ -538,3 +538,117 @@ figure.foto-credito figcaption {
   max-width: 640px;
   margin: var(--espaco-lg) auto;
 }
+
+/* Fichas de catalogação do acervo (catálogo expandido) */
+.card-abrir {
+  all: unset;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background: var(--cor-branco);
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra-suave);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  height: 100%;
+}
+.card-abrir:hover, .card-abrir:focus-visible { transform: translateY(-4px); box-shadow: var(--sombra-media); }
+.card-abrir:focus-visible { outline: 3px solid var(--cor-dourado); outline-offset: 2px; }
+.card-abrir .card__corpo-clique { padding: var(--espaco-md); flex: 1; display: flex; flex-direction: column; text-align: left; }
+.card-abrir .card__corpo-clique h3 { margin-bottom: 0.4rem; }
+.card-abrir .card__corpo-clique p { color: #5c5044; flex: 1; }
+.card__ver-mais {
+  margin-top: 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--cor-terracota);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.ficha-dialog {
+  border: none;
+  border-radius: var(--raio);
+  padding: 0;
+  max-width: 780px;
+  width: 92vw;
+  max-height: 88vh;
+  box-shadow: var(--sombra-media);
+  color: var(--cor-offblack);
+}
+.ficha-dialog::backdrop { background: rgba(43,36,29,0.72); }
+.ficha-dialog__topo { position: relative; }
+.ficha-dialog__topo img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 0; }
+.ficha-dialog__fechar {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  border: none;
+  background: rgba(43,36,29,0.75);
+  color: var(--cor-branco);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.ficha-dialog__fechar:hover { background: var(--cor-terracota); }
+.ficha-dialog__credito {
+  font-size: 0.72rem;
+  color: rgba(254,252,249,0.9);
+  background: rgba(43,36,29,0.6);
+  padding: 0.25rem 0.6rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 var(--raio) 0 0;
+}
+.ficha-dialog__miolo { padding: var(--espaco-md) var(--espaco-lg) var(--espaco-lg); overflow-y: auto; }
+.ficha-dialog__miolo .card__tag { margin-bottom: 0.5rem; }
+.ficha-dialog__miolo h2 { margin-bottom: 0.9rem; }
+.ficha-campos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem 1.4rem;
+  margin: 1.3rem 0;
+  padding: 1.1rem;
+  background: var(--cor-creme);
+  border-radius: var(--raio);
+  border: 1px solid rgba(139,107,74,0.18);
+}
+.ficha-campo dt {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--cor-couro);
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+.ficha-campo dd { margin: 0; font-size: 0.92rem; }
+.ficha-campo dd.vazio { color: #a89a86; font-style: italic; }
+.ficha-dialog__miolo .nota-curadoria {
+  font-size: 0.78rem;
+  color: #7a6c5a;
+  border-top: 1px dashed rgba(139,107,74,0.3);
+  padding-top: 0.8rem;
+  margin-top: 1.2rem;
+}
+@media (max-width: 560px) {
+  .ficha-campos { grid-template-columns: 1fr; }
+}
+
+/* Selo "em desenvolvimento" para funcionalidades futuras */
+.selo-em-desenvolvimento {
+  display: inline-block;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: var(--cor-dourado);
+  color: var(--cor-cafe);
+  padding: 0.2rem 0.55rem;
+  border-radius: 3px;
+  margin-bottom: 0.6rem;
+}
+.card--futuro { opacity: 0.92; border: 1px dashed rgba(139,107,74,0.35); }

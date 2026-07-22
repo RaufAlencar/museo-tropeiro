@@ -114,3 +114,25 @@ function debounce(fn, delay) {
     timer = setTimeout(() => fn(...args), delay);
   };
 }
+
+// Fichas de catalogação do acervo (abre/fecha detalhe por categoria)
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-abrir-ficha]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var id = btn.getAttribute('data-abrir-ficha');
+      var dialog = document.getElementById('ficha-' + id);
+      if (dialog && typeof dialog.showModal === 'function') {
+        dialog.showModal();
+      }
+    });
+  });
+  document.querySelectorAll('.ficha-dialog').forEach(function (dialog) {
+    var fechar = dialog.querySelector('.ficha-dialog__fechar');
+    if (fechar) {
+      fechar.addEventListener('click', function () { dialog.close(); });
+    }
+    dialog.addEventListener('click', function (e) {
+      if (e.target === dialog) dialog.close();
+    });
+  });
+});
